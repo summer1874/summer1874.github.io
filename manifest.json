@@ -1,0 +1,25 @@
+
+{
+  "name": "SUMMER1874-BLOG",
+  "short_name": "summer1874",
+  "description": "summer的博客",
+  "icons": [
+    {
+      "src": "/icons/icon16.jpg",
+      "sizes": "16x16",
+      "type": "image/jpg"
+    }, {
+      "src": "/icons/icon48.jpg",
+      "sizes": "48x48",
+      "type": "image/jpg"
+    }, {
+      "src": "/icons/icon128.jpg",
+      "sizes": "128x128",
+      "type": "image/jpg"
+    }
+  ],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#1e90ff"
+}
