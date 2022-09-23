@@ -1,0 +1,41 @@
+@import 'palette.scss';
+
+@font-face{
+  font-family: 'Monoton';
+  src : url(/assets/font/Monoton-Regular.ttf);
+}
+.blog-hero h1, .blog-hero .description {
+  font-family: 'Monoton';
+}
+.blog-hero h1{
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff1177,
+  0 0 35px #ff1177, 0 0 40px #ff1177, 0 0 50px #ff1177, 0 0 75px #ff1177;
+  font-size: 5rem !important;
+}
+.blog-hero .description  {
+   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228dff,
+      0 0 70px #228dff, 0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
+  font-size: 2rem !important;
+}
+// place your custom styles here
+.blog-info-list .blog-type-button .icon-wapper.active {
+  .icon {
+    color: #fff;
+  }
+}
+img.blogger-avatar, img.logo{
+  border-radius: 50%;
+}
+
+.article-wrapper header.title::before {
+  content: '';
+  height: 1em;
+  width: 4px;
+  background: $theme-color;
+  position: absolute;
+  left: -0.8rem;
+  top: 0.3rem;
+}
+.theme-hope-content more {
+ display: none;
+}
