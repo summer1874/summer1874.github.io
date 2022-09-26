@@ -34,6 +34,9 @@ jobs:
           NODE_OPTIONS: --max_old_space_size=8192
         run: pnpm docs:build
 
+      - name: CNAME
+        run: cp ./CNAME ./build/web/CNAME
+      
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
