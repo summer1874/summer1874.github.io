@@ -39,3 +39,14 @@ img.blogger-avatar, img.logo{
 .theme-hope-content more {
  display: none;
 }
+.sidebar-heading {
+  position: relative;
+  &::before {
+    content: " ";
+    position: absolute;
+    width: 79%;
+    height: 20px;
+    background: rgb(33 150 243 / 10%);
+    top: 1.1rem;
+  }
+}

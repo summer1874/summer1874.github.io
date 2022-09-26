@@ -20,6 +20,13 @@ export default hopeTheme({
   docsDir: "docs",
 
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
+  fullscreen: true,
+  themeColor: {
+    blue: "#2196f3",
+    red: "#f26d6d",
+    green: "#3eaf7c",
+    orange: "#fb9b5f",
+  },
 
   blog: {
     medias: {
@@ -93,6 +100,7 @@ export default hopeTheme({
   plugins: {
     copyCode: {
       showInMobile: true,
+      pure: false,
     },
     blog: {
       autoExcerpt: true,
@@ -106,10 +114,10 @@ export default hopeTheme({
        * Using Giscus
        */
       provider: "Giscus",
-      repo: "vuepress-theme-hope/giscus-discussions",
-      repoId: "R_kgDOG_Pt2A",
-      category: "Announcements",
-      categoryId: "DIC_kwDOG_Pt2M4COD69",
+      repo: "summer1874/giscus",
+      repoId: "R_kgDOIEWO0w",
+      category: "General",
+      categoryId: "DIC_kwDOIEWO084CRonF",
 
       /**
        * Using Twikoo

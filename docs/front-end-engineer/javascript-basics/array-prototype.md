@@ -49,14 +49,14 @@ tag:
 >用新元素替换旧元素的方式来修改数组。需要维持原数组引用时，就地删除或者新增元素，splice是最适合的。
 7. [`Array.unshift`](#array-unshift) 
 >方法用于在数组开始处插入一些元素(就像是栈底插入)，并返回数组新的长度。
-8. [`Array.copyWithin`](#array-copyWithin) 
+8. [`Array.copyWithin`](#array-copywithin) 
 >用于数组内元素之间的替换，即替换元素和被替换元素均是数组内的元素。
 9. [`Array.fill`](#array-fill) 
 >它同样用于数组元素替换，但与 copyWithin 略有不同，它主要用于将数组指定区间内的元素替换为某个值。
 
 **不会改变自身的方法(8个)**
 
-1. [`Array.isArray`](#array-isArray) 
+1. [`Array.isArray`](#array-isarray) 
 >用于确定传递的值是否是一个 Array
 2. [`Array.concat`](#array-concat) 
 >将传入的数组或者元素与原数组合并，组成一个新的数组并返回。
@@ -64,9 +64,9 @@ tag:
 >将数组中的所有元素连接成一个字符串。
 4. [`Array.slice`](#array-slice) 
 >将数组中一部分元素浅复制存入新的数组对象，并且返回这个数组对象。
-5. [`Array.indexOf`](#array-indexOf) 
+5. [`Array.indexOf`](#array-indexof) 
 >用于查找元素在数组中第一次出现时的索引，如果没有，则返回-1。
-6. [`Array.lastIndexOf`](#array-lastIndexOf) 
+6. [`Array.lastIndexOf`](#array-lastindexof) 
 >用于查找元素在数组中最后一次出现时的索引，如果没有，则返回-1。并且它是indexOf的逆向查找，即从数组最后一个往前查找。
 7. [`Array.includes`](#array-includes) 
 >用来判断当前数组是否包含某个指定的值，如果是，则返回 true，否则返回 false。
@@ -75,33 +75,33 @@ tag:
 
 
 遍历方法(13个)
-1. [`Array.forEach`](#array-float)
+1. [`Array.forEach`](#array-foreach)
 >forEach() 方法对数组的每个元素执行一次提供的函数。
-2. [`Array.every`](#array-float) 
+2. [`Array.every`](#array-every) 
 >使用传入的函数测试所有元素，只要其中有一个函数返回值为 false，那么该方法的结果为 false；如果全部返回 true，那么该方法的结果才为 true。
-3. [`Array.some`](#array-float) 
+3. [`Array.some`](#array-some) 
 >同 every() 方法相反，some 测试数组元素时，只要有一个函数返回值为 true，则该方法返回 true，若全部返回 false，则该方法返回 false。
-4. [`Array.filter`](#array-float) 
+4. [`Array.filter`](#array-filter) 
 >使用传入的函数测试所有元素，并返回所有通过测试的元素组成的新数组。它就好比一个过滤器，筛掉不符合条件的元素。
-5. [`Array.map`](#array-float) 
+5. [`Array.map`](#array-map) 
 >遍历数组，使用传入函数处理每个元素，并返回函数的返回值组成的新数组。
-6. [`Array.reduce`](#array-float) 
+6. [`Array.reduce`](#array-reduce) 
 >接收一个方法作为累加器，数组中的每个值(从左至右) 开始合并，最终为一个值。
-. [`Array.reduceRight`](#array-float) 
+. [`Array.reduceRight`](#array-reduceright) 
 >方法接收一个方法作为累加器，数组中的每个值（从右至左）开始合并，最终为一个值。除了与reduce执行方向相反外，其他完全与其一致。
-7. [`Array.entries`](#array-float) 
+7. [`Array.entries`](#array-entries) 
 >返回一个数组迭代器对象，该对象包含数组中每个索引的键值对。
-8. [`Array.find`](#array-float) 
+8. [`Array.find`](#array-find) 
 >返回数组中第一个满足条件的元素（如果有的话）， 如果没有，则返回undefined。
-9. [`Array.findIndex`](#array-float) 
+9. [`Array.findIndex`](#array-findindex) 
 >它返回数组中第一个满足条件的元素的索引（如果有的话）否则返回-1。
-10. [`Array.values`](#array-float) 
+10. [`Array.values`](#array-values) 
 >返回一个数组迭代器对象，该对象包含数组中每个索引的值。其用法基本与上述 entries 方法一致。
-11. [`Array.keys`](#array-float) 
+11. [`Array.keys`](#array-keys) 
 >返回一个数组索引的迭代器
-12. [`Symbol.iterator`](#array-float) 
+12. [`Symbol.iterator`](#array-iterator) 
 >同 values 方法功能相同。
-13. [`Array.floatMap`](#array-floatMap)
+13. [`Array.floatMap`](#array-floatmap)
 > `flatMap()` 方法首先使用映射函数映射每个元素，然后将结果压缩成一个新数组。它与 `map` 连着深度值为 `1` 的 `flat` 几乎相同，但 `flatMap` 通常在合并成一种方法的效率稍微高一些。
 ## 构造新数组方法
 
@@ -343,7 +343,7 @@ arr.unshift(0) // [0, 1, 2, 3]
 arr.unshift(...[-2, -1]) // [-2, -1, 0, 1, 2, 3]
 ```
 
-### `Array.copyWithin()` `ES6`
+### `Array.copyWithin()`
 
 :::info
 **描述**: `copyWithin()`方法浅复制数组的一部分到同一数组中的另一个位置，并返回它，而不修改其大小。返回：改变了数组。
@@ -367,7 +367,7 @@ arr2.copyWithin(0, 3, 4) // [ 4, 2, 3, 4 ]
 // 从下标为0的位置开始，复制数组， 指定复制的第一个元素下标3 至 结束位置为4 [1] => [4]
 ```
 
-### `Array.fill()` `ES6`
+### `Array.fill()`
 
 :::info
 **描述**: `fill()`方法用一个固定值填充一个数组中从起始索引到终止索引内的全部元素。不包括终止索引。
@@ -550,7 +550,7 @@ arr.lastIndexOf(1) // 4
 arr.lastIndexOf(1, 3) // 0
 ```
 
-### `Array.includes()` `ES7`
+### `Array.includes()`
 
 :::info
 **描述**: `includes()` 方法用来判断一个数组是否包含一个指定的值，根据情况，如果包含则返回 true，否则返回false
@@ -568,7 +568,7 @@ arr.includes('pop') // false
 arr.includes('pop', )
 ```
 
-### `Array.flat()` `ES6`
+### `Array.flat()`
 :::info
 **描述**：`flat()` 方法会按照一个可指定的深度递归遍历数组，并将所有元素与遍历到的子数组中的元素合并为一个新数组返回。
 
@@ -604,7 +604,7 @@ var arr4 = [1, 2, , 4, 5];
 arr4.flat();
 // [1, 2, 4, 5]
 ```
-### `Array.flatMap()` `ES6`
+### `Array.flatMap()`
 :::info
 **描述**：`flatMap()` 方法首先使用映射函数映射每个元素，然后将结果压缩成一个新数组。它与 `map` 连着深度值为 1 的 `flat` 几乎相同，但 `flatMap` 通常在合并成一种方法的效率稍微高一些。
 
@@ -778,7 +778,7 @@ arr.reduce((acc, cur) => {
 
 [Array.reduceRight](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/ReduceRight)
 
-### `Array.entries() ES6`
+### `Array.entries()`
 
 :::info
 **描述**: `entries()` 方法返回一个新的`Array Iterator`对象，该对象包含数组中每个索引的键/值对。
@@ -818,7 +818,7 @@ for(let v of arr.entries()) {
 // ['b', 'b']
 ```
 
-### `Array.find() ES6`
+### `Array.find()`
 
 :::info
 **描述**: `find()` 方法返回数组中满足提供的测试函数的第一个元素的值。否则返回 `undefined`。
@@ -840,7 +840,7 @@ arr.find(e => e.name === 'Karin') // { name: 'Karin', gender: 'man' }
 arr.find(e => e.name === 'Alsace') // undefined
 ```
 
-### `Array.findIndex() ES6`
+### `Array.findIndex()`
 
 :::info
 **描述**: `findIndex()` 方法返回数组中满足提供的测试函数的第一个元素的索引。否则返回`-1`。
@@ -862,7 +862,7 @@ arr.findIndex(e => e.name === 'Karin') // 2
 arr.findIndex(e => e.name === 'Alsace') // -1
 ```
 
-### `Array.values() ES6`
+### `Array.values()`
 
 :::info
 **描述**: `values()` 类同于`entries()`,不过。`Array Iterator`对象中的`value`不再为键值对，而是索引的值。
@@ -902,7 +902,7 @@ for(let v of arr.keys()) {
 // 'b'
 ```
 
-### `Array.keys() ES6`
+### `Array.keys()`
 
 :::info
 **描述**: `keys()` 类同于`entries()`,不过。`Array Iterator`对象中的`value`不再为键值对，而是索引键。
@@ -942,7 +942,7 @@ for(let v of arr.keys()) {
 // 'b'
 ```
 
-### `Symbol.iterator() ES6`
+### `Symbol.iterator()`
 
 :::info
 **描述**: `@@iterator` 属性和 `values()` 属性的初始值均为同一个函数对象。

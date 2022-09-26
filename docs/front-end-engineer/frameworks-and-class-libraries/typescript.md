@@ -1,12 +1,13 @@
 ---
+title: "TypeScript基础语法"
 date: 2019-12-06
-categories:
+category:
+  -  前端知识点清单
   -  框架和类库
-tags: 
-  - TypeScriptç
+tag: 
+  - TypeScript
 ---
 
-# TypeScript 简介
 <more>TypeScript 指南</more>
 <!-- more -->
 

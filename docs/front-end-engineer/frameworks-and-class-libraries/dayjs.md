@@ -1,10 +1,10 @@
 ---
 title: "dayjs"
 date: 2018-12-30
-categories:
+category:
   -  前端知识点清单
   -  框架和库类
-tags:
+tag:
   - dayjs
 ---
 

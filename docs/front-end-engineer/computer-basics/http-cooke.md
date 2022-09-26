@@ -1,21 +1,22 @@
 ---
+title: "📦 HTTP-COOKE"
 date: 2020-07-13
 category:
   - 前端知识点清单
-  - JavaScript基础
+  - 计算机基础
 tag:
   - http
   - cooke
 ---
-# 📦 HTTP-COOKE
+
 <more>关于域名，域名前的www，给子域名设置cookies， Cookie域中的点前缀是什么意思</more>
 <!-- more -->
 
 ## 关于域名
 ### 域名分级
-顶级域名就是一级域名，比如 `.com` `.org` .`cn`  
-N级域名就是在N-1级域名前追加一级。  
-比如二级域名是在一级域名前加一级，二级域名示例：`baidu.com` `zhihu.com` `qq.com`
+- 顶级域名就是一级域名，比如 `.com` `.org` .`cn`  
+- N级域名就是在N-1级域名前追加一级。  
+- 比如二级域名是在一级域名前加一级，二级域名示例：`baidu.com` `zhihu.com` `qq.com`
 
 :::tip TIP
 注： 有些人会说 `baidu.com` `zhihu.com` `qq.com` 是一级域名，虽然是错误的-但可以理解(说的人多了也就是对的了……)，这是站在使用者/购买者角度看的，对于购买域名者来说 `xxx.com` `xxx.com.cn` 就相当一级域名，但是从真正的域名分级看，它们俩分别是**二级域名**、 **三级域名**。
