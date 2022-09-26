@@ -35,7 +35,7 @@ jobs:
         run: pnpm docs:build
 
       - name: CNAME
-        run: cp ./CNAME ./build/web/CNAME
+        run: cp CNAME docs/.vuepress/dist
       
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
