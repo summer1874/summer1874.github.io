@@ -4,7 +4,6 @@ import { searchPlugin } from "@vuepress/plugin-search";
 
 export default defineUserConfig({
   base: "/",
-  dest: "./dist",
   lang: "zh-CN",
   theme,
   shouldPrefetch: false,
